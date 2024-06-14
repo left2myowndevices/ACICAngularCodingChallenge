@@ -3,7 +3,6 @@ import { LineOfBusiness } from "../LineOfBusiness";
 
  // takes the already mapped array of quotes/LOBs and orders them by the size of the quotes array so popular items are first.
 export const  sorttheArrayByQuoteLength = (unorderedArray: MappedInsuranceQuote[]) =>{
-  console.log(unorderedArray)
     return unorderedArray.sort(
       (fistArray, secondArray) =>
         secondArray.quotes.length - fistArray.quotes.length

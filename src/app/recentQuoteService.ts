@@ -37,7 +37,6 @@ export class RecentQuoteService {
         return groupedQuotes;
       }),
       tap(groupedQuotes => {this.log('fetched quotes')
-        console.log('groupedQuotes', groupedQuotes);
       }),
       catchError(
         this.handleError<{ [id: number]: InsuranceQuote[] }>(

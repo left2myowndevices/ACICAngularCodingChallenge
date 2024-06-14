@@ -38,7 +38,6 @@ export class LineOfBusinessDetailComponent implements OnInit {
     this.recentQuoteService
       .getQuotesByLineOfBusiness(this.id)
       .subscribe((quotes) => (this.quotes = quotes));
-    console.log('quotes in dashboard detail', this.quotes);
   }
 
   goBack(): void {
