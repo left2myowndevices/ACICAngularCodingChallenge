@@ -1,0 +1,6 @@
+<h2> Top 2 lines of Business:</h2>
+<ul *ngFor="let mappedQuote of quotesMappedToBusiness; let i = index">
+  <li *ngIf="i < 2">
+    {{ mappedQuote.id }} {{ mappedQuote.name }}
+  </li>
+</ul>
